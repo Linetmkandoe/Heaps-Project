@@ -1,14 +1,15 @@
 import heapq
+numbers = [5,1,23,54,21,27]
 
-heap = [5,1,23,54]
+heapq.heapify(numbers)
+print(numbers)
 
-heapq.heapify(heap)
-heapq.heappush(heap,60)
-heapq.heappush(heap,30)
-print(heap)
-heapq.heapify(heap)
-heapq.heappop(heap)
-print(heap)
+heapq.heappush(numbers,60)
+print(numbers)
+
+heapq.heappop(numbers)
+print(numbers)
+
 
 
  
